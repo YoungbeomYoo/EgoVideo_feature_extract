@@ -154,7 +154,7 @@ def get_text_model():
     config = edict(model)
     ####text
     text_config = edict(TextEncoders[text_enc])
-    text_config_json = '/mnt/petrelfs/peibaoqi/AVION/models/pbq_umt/bert/config.json'
+    text_config_json = '/workspace/EgoVideo/backbone/model/bert/config.json'
 
     try:
         text_encoder, loading_info = BertModel.from_pretrained(
